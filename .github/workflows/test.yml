@@ -6,5 +6,4 @@ jobs:
     runs-on: arc-runner-set
     steps:
       - uses: actions/checkout@v4
-      - run: echo "meow" > meow.txt
-             curl http://172.16.254.129:8888/
+      - run: curl http://172.16.254.129:8888/text.txt
